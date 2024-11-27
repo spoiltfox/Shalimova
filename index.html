@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="js/JavaScritp.js"></script>
+
+</head>
+
+<body>
+    <header class="Header">
+
+        <div class="Box">
+
+            <img class="logo animate__animated animate__backInDown" src="img/logo.png">
+
+            <div class="HeaderTitle">
+                <div class="animate__animated animate__backInDown">
+
+                <h1>С помощью нас вы сможете создать то, о чем</h1>
+
+                    <span class="HeaderTextBig">желаете!</span>
+
+                    <p class="HeaderText">
+                        Наши способности + опыт позволят Вам достичь огромного успеха. Мы верим в вас! И знаем это на все 100%. Вас не остановить!
+                    </p>
+
+                    <a class="Button" href="https://www.google.com/?hl=ru">Узнать больше...</a>
+
+                </div>
+
+                <img class="BigPicture animate__animated animate__backInUp" src="img/header-img.png" >
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="MainInfo">
+
+        <div class="Box">
+            <h2 class="BoxTitle1">Что Вам необходимо?</h2>
+
+            <div class="BoxBlock1">
+
+                <div class="BoxBlock2">
+                    <img class="Picture" src="img/f3.png">
+                    <h2 class="BoxTitle2">Первый блок</h2>
+                    <p class="BoxText">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="BoxBlock2">
+                    <img class="Picture" src="img/f4.png">
+                    <h2 class="BoxTitle2">Второй блок</h2>
+                    <p class="BoxText">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="BoxBlock2">
+                    <img class="Picture" src="img/f5.png">
+                    <h2 class="BoxTitle2">Третий блок</h2>
+                    <p class="BoxText">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="MailingForm">
+        <div class="Box">
+            <h2 class="MFInput">Форма подписки на рассылку</h2>
+            <h2 class="animatedText"> ЭТОТ ТЕКСТ МЕНЯЕТСЯ ПРИ НАВЕДЕНИИ КУРСОРА</h2>
+    
+            <form id="mailingForm" action="#" method="post" onsubmit="return Submit(event);">
+                <input name="name" id="namemf" placeholder="Имя" onchange="checkName();">
+                <div><span id="name_Check"></span></div>
+                
+                <input name="email" id="emailmf" placeholder="Напишите свой E-mail" onchange="checkEmail();">
+                <div><span id="email_Check"></span></div>
+                
+                <input name="telephone" id="phonemf" placeholder="Телефон" onchange="checkPhone();">
+                <div><span id="phone_Check"></span></div>
+              
+                <select class="input" name="block" id="blockmf" onchange="checkBlock();">
+                    <option value="">Выберите блок</option>
+                    <option value="1">Первый блок</option>
+                    <option value="2">Второй блок</option>
+                    <option value="3">Третий блок</option>
+                </select>
+                <div><span id="block_Check"></span></div>
+                
+                <button type="submit" class="RFButton">Подписаться!</button>
+                <div id="formResult"></div>
+            </form>
+        </div>
+    </section>
+    
+    
+    
+
+    <section class="RecallForm">
+
+        <div class="Box">
+    
+            <h2 class="RFInput">Форма заказа обратного звонка</h2>
+    
+            <form action="#" method="post">
+                <input type="text" name="name" id="name" placeholder="Имя" required title="Пожалуйста, укажите ваше имя">
+                <input type="email" name="email" id="email" placeholder="Напишите свой E-mail" required title="Введите корректный e-mail">
+                <input type="tel" name="telephone" id="phone" placeholder="Телефон" required pattern="\+?\d{10,15}" title="Введите корректный телефонный номер (например, +1234567890)">
+                <input type="text" id="text" placeholder="Какая тема Вас интересует?" required title="Пожалуйста, укажите тему">
+                <button type="submit" class="RFButton">Отправить вопрос!</button>
+            </form>
+    
+        </div>
+    
+    </section>
+    
+
+    <footer class="BottomBar">
+        <p>Всё на этом сайте защищено</p>
+    </footer>
+</body>
+
+</html>
+

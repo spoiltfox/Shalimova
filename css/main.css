@@ -1,0 +1,361 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.Box {
+
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0; 
+
+}
+
+
+.logo{
+	display: inline-block;
+}
+
+
+
+.Header{
+	background: linear-gradient(to bottom,  rgb(194, 212, 245) 0%,rgb(40, 139, 238)  100%);
+	padding-top: 30px;
+	padding-bottom: 150px;
+}
+
+.HeaderTitle{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.HeaderTextBig{
+	font-size: 60px;
+	font-weight: 600;
+	font-family: 'Ubuntu', sans-serif;
+	animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.HeaderText{
+	display: flex;
+	font-weight: 600;
+}
+
+.Button{
+	display: flex;
+	width: 300px;
+	height: 60px;
+	color: black;
+	background-color: rgb(255, 207, 49);
+	font-weight: 600;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.BigPicture {
+    width: 40%; 
+    height: auto;
+    max-width: 100%;
+	display: block;
+	
+}
+
+
+.MainInfo{
+	text-align: center;
+}
+
+.BoxBlock1{
+	display: flex;
+	justify-content: space-around;
+}
+
+.BoxBlock2{
+	width: 20%;
+}
+
+.BoxTitle1{
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.BoxTitle1:hover {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.BoxTitle2{
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.Picture{
+	margin-bottom: 15px;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.Picture:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.BoxText{
+	color: rgb(143, 140, 140);
+	margin-bottom: 60px;
+	transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.BoxText:hover {
+    font-size: 18px;
+    color: black;
+}
+
+.RecallForm{
+	background-color: #ececec;
+	padding: 60px 0;
+	text-align: center;
+}
+
+
+.MailingForm{
+	background-color: #d1d1d1;
+	padding: 60px 0;
+	text-align: center;
+}
+
+
+.RFInput{
+	font-size: 30px;
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+
+.MFInput{
+	font-size: 30px;
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+
+form{
+	width: 60%;
+	margin: 0 auto;
+}
+
+input{
+	width: 60%;
+	padding: 15px;
+	margin: 15px;
+	border: 2px solid #000000;
+}
+
+.input{
+    width: 60%;
+	padding: 15px;
+	margin: 15px;
+	border: 2px solid #000000;
+}
+
+.RFButton{
+	width: 60%;
+	background-color: rgb(255, 207, 49);
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.MFButton{
+	width: 60%;
+	background-color: rgb(255, 207, 49);
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.Button:hover, .RFButton:hover {
+    background-color: white;
+    transform: scale(1.1); 
+}
+
+.BottomBar {
+	color: white;
+	text-align: center;
+	background: linear-gradient(to bottom, rgb(70, 126, 196) 0%, rgb(40, 139, 226) 40%, rgb(13, 121, 216) 60%, rgb(52, 157, 238) 100%);
+	padding: 30px;
+}
+
+
+
+@media screen and (max-width: 1199px) {
+    .Box {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Box {
+        width: auto;  
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .RecallForm {
+        width: auto; 
+        align-items: center;
+    }
+
+	.HeaderTitle{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+
+    .HeaderText {
+        align-items: flex-start;
+    }
+
+    .HeaderTextBig {
+        font-size: 50px;
+    }
+
+    .BigPicture {
+        width: 80%; 
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    .BoxBlock1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BoxTitle1 {
+        font-size: 24px;
+    }
+
+    .BoxText {
+        font-size: 14px;
+    }
+
+    .Picture {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    input, .RFButton {
+        width: 100%;
+    }
+
+	form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Box {
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .RecallForm {
+        width: auto; 
+        align-items: center;
+    }
+	.HeaderTitle{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+
+    .HeaderText {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .HeaderTextBig {
+        font-size: 50px;
+    }
+
+
+    .BigPicture {
+        width: 80%;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    .BoxBlock1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BoxTitle1 {
+        font-size: 22px;
+    }
+
+    .BoxText {
+        font-size: 12px;
+    }
+
+    .Picture {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    input, .RFButton {
+        width: 100%;
+    }
+
+	form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
